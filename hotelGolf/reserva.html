@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reserva - Hotel Golf & Resort</title>
+        <link rel="stylesheet" type="text/css" href="estilos.css">
+    </head>
+    <body>
+        <header>
+            <h1>Hotel La Reserva</h1>
+            <h2>Golf & Resort</h2>
+        </header>
+        <div>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="reserva.html">Reserva</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+        <section>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Habitación</th>
+                        <th>Adultos</th>
+                        <th>Niños</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td>2023-12-01</td>
+                        <td>Suite Deluxe</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td><button>Reservar</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <form>
+                <label for="fecha">Fecha de reserva:</label>
+                <input type="date" id="fecha" name="fecha" required>
+            
+                <label for="habitacion">Habitación:</label>
+                <select id="habitacion" name="habitacion" required>
+                    <option value="suite_deluxe">Suite Deluxe</option>
+                    <option value="habitacion_estandar">Habitación Estándar doble</option>
+                    <option value="habitacion_estandar">Habitación Estándar</option>
+                </select>
+            
+                <label for="adultos">Adultos:</label>
+                <input type="number" id="adultos" name="adultos" min="1" value="1" required>
+            
+                <label for="ninos">Niños:</label>
+                <input type="number" id="ninos" name="ninos" min="0" value="0" required>
+            
+                <button type="submit">Reservar</button>
+            </form>
+            
+        </section>
+        <footer>
+            <p>&copy; 2023 Hotel La Reserva - Golf & Resort. Todos los derechos reservados.</p>
+        </footer>        
+    </body>
+</html>
